@@ -11,6 +11,8 @@ struct ContentView: View {
     
     @State private var isNight: Bool = false
     
+    let myWeatherData = weatherData
+    
     var body: some View {
         
         ZStack {
@@ -23,25 +25,10 @@ struct ContentView: View {
                 
                 
                 HStack(spacing: 20) {
-                    WeatherDayView(dayOfWeek: "TUE",
-                                   imageName: "cloud.sun.fill",
-                                   temperature: 76)
                     
-                    WeatherDayView(dayOfWeek: "WED",
-                                   imageName: "sun.max.fill",
-                                   temperature: 88)
-                    
-                    WeatherDayView(dayOfWeek: "THU",
-                                   imageName: "wind.snow",
-                                   temperature: 55)
-                    
-                    WeatherDayView(dayOfWeek: "FRI",
-                                   imageName: "sunset.fill",
-                                   temperature: 60)
-                    
-                    WeatherDayView(dayOfWeek: "SAT",
-                                   imageName: "snow",
-                                   temperature: 25)
+                    ForEach(myWeatherData, id: \.dayOfWeek) { datum in
+                        WeatherDayView(dayOfWeek: datum.dayOfWeek, imageName: datum.imageName, temperature: datum.temperature)
+                    }
                     
                 }
                 

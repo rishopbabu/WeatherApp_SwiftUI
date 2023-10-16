@@ -14,6 +14,7 @@
 		6CFF385B2ADD67B4009E836B /* WeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFF385A2ADD67B4009E836B /* WeatherAppTests.swift */; };
 		6CFF38652ADD67B4009E836B /* WeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFF38642ADD67B4009E836B /* WeatherAppUITests.swift */; };
 		6CFF38672ADD67B4009E836B /* WeatherAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFF38662ADD67B4009E836B /* WeatherAppUITestsLaunchTests.swift */; };
+		6CFF38742ADD82B2009E836B /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFF38732ADD82B2009E836B /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		6CFF38602ADD67B4009E836B /* WeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFF38642ADD67B4009E836B /* WeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppUITests.swift; sourceTree = "<group>"; };
 		6CFF38662ADD67B4009E836B /* WeatherAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6CFF38732ADD82B2009E836B /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				6CFF384B2ADD67B2009E836B /* ContentView.swift */,
 				6CFF384D2ADD67B4009E836B /* Assets.xcassets */,
 				6CFF384F2ADD67B4009E836B /* Preview Content */,
+				6CFF38732ADD82B2009E836B /* DataModel.swift */,
 			);
 			path = WeatherApp;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			files = (
 				6CFF384C2ADD67B2009E836B /* ContentView.swift in Sources */,
 				6CFF384A2ADD67B2009E836B /* WeatherAppApp.swift in Sources */,
+				6CFF38742ADD82B2009E836B /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
