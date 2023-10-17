@@ -37,7 +37,7 @@ struct ContentView: View {
                 Button {
                     isNight.toggle()
                 } label: {
-                    WeatherButton(title: "Change Day Time",
+                    WeatherButton(title: isNight ? "Change Day Time" : "Change Night Time",
                                   textColor: .blue,
                                   backgroundColor: .white)
                 }
